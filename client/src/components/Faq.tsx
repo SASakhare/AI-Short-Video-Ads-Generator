@@ -9,13 +9,11 @@ export default function Faq() {
     return (
         <section id="faq" className="py-20 2xl:py-32">
             <div className="max-w-3xl mx-auto px-4">
-
                 <Title
                     title="FAQ"
-                    heading="Frequently asked questions"
-                    description="Everything you need to know about working with our agency. If you have more questions, feel free to reach out."
+                    heading="Frequently Asked Questions"
+                    description="Find answers about AI video generation, pricing, credits, exports, and everything you need to get started with AdNova AI."
                 />
-
                 <div className="space-y-3">
                     {faqData.map((faq, i) => (
                         <motion.details
