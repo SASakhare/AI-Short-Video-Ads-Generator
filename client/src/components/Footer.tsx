@@ -1,10 +1,11 @@
+import { assets } from '../assets/assets';
 import { footerLinks } from '../assets/dummy-data';
 import { motion } from 'framer-motion';
 
 export default function Footer() {
-
     return (
-        <motion.footer className="bg-white/6 border-t border-white/6 pt-10 text-gray-300"
+        <motion.footer
+            className="bg-white/6 border-t border-white/6 pt-10 text-gray-300"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -13,9 +14,17 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto px-6">
                 <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-white/10">
                     <div>
-                        <img src='/logo.svg' alt="logo" className="h-8" />
-                        <p className="max-w-[410px] mt-6 text-sm leading-relaxed">
-                            We are a digital agency focused on strategy, design and development—helping brands build meaningful digital experiences and grow sustainably.
+                        <img
+                            src={assets.logo}
+                            alt="AdNova AI"
+                            className="h-16 rounded-xl"
+                        />
+
+                        <p className="max-w-105 mt-6 text-sm leading-relaxed">
+                            AdNova AI helps creators, startups, and businesses
+                            transform ideas into high-converting video advertisements
+                            using AI-generated scripts, visuals, voiceovers, and
+                            automated video production.
                         </p>
                     </div>
 
@@ -25,9 +34,13 @@ export default function Footer() {
                                 <h3 className="font-semibold text-base text-white md:mb-5 mb-2">
                                     {section.title}
                                 </h3>
+
                                 <ul className="text-sm space-y-1">
                                     {section.links.map(
-                                        (link: { name: string; url: string }, i) => (
+                                        (
+                                            link: { name: string; url: string },
+                                            i
+                                        ) => (
                                             <li key={i}>
                                                 <a
                                                     href={link.url}
@@ -45,13 +58,9 @@ export default function Footer() {
                 </div>
 
                 <p className="py-4 text-center text-sm text-gray-400">
-                    © {new Date().getFullYear()} {' '}
-                    <a href="https://prebuiltui.com/tailwind-templates?ref=pixel-forge">
-                        PrebuiltUI
-                    </a>
-                    . All rights reserved.
+                    © {new Date().getFullYear()} AdNova AI. All rights reserved.
                 </p>
             </div>
         </motion.footer>
     );
-};
+}
