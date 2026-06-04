@@ -13,8 +13,8 @@ export default function Pricing() {
 
                 <Title
                     title="Pricing"
-                    heading="Simple, transparent pricing"
-                    description="Flexible agency packages designed to fit startups, growing teams and established brands."
+                    heading="Create more ads, spend less time"
+                    description="Simple and transparent plans designed for creators, startups, marketers, and growing businesses using AI-powered ad generation."
                 />
 
                 <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
