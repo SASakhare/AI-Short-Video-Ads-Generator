@@ -8,11 +8,10 @@ export default function Features() {
     return (
         <section id="features" className="py-20 2xl:py-32">
             <div className="max-w-6xl mx-auto px-4">
-
                 <Title
-                    title="Services"
-                    heading="Everything your brand needs to grow"
-                    description="From strategy to execution, we help businesses build strong digital products and meaningful customer experiences."
+                    title="Features"
+                    heading="Transform ideas into high-converting video advertisements"
+                    description="From AI-generated scripts to professional video production, AdNova AI provides everything you need to create compelling marketing content without editing, design, or production expertise."
                 />
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
