@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import LenisScroll from './components/lenis';
 
 function App() {
+
 	return (
 		<>
 			<SoftBackdrop />
